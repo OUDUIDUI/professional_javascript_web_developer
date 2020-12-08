@@ -1,1 +1,0 @@
-console.log("异步执行JavaScript")

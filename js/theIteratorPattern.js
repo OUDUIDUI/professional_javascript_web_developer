@@ -76,4 +76,54 @@
     console.log(`iter.next() = ${JSON.stringify(iter.next())}`);
     console.log(`iter.next() = ${JSON.stringify(iter.next())}`);
     console.log(`iter.next() = ${JSON.stringify(iter.next())}`);
+
+
+    // 自定义迭代器
+    console.log(`自定义迭代器：`)
+    class Counter {
+        constructor(limit){
+            this.limit = limit;
+        }
+
+        [Symbol.iterator]() {
+            let count = 1;
+            let limit = this.limit;
+            return {
+                next(){
+                    if(count <= limit) {
+                        return { done: false, value: count++ };
+                    }else{
+                        return { done: true, value: undefined };
+                    }
+                },
+                // 提前终止生成器
+                return() {
+                    console.log(`Exiting early`);
+                    return {done: true}
+                }
+            }
+        }
+    }
+
+    let counter = new Counter(5);
+    console.log(`利用break提前终止迭代器`);
+    for(let i of counter){
+        if(i > 2) break;
+        console.log(i);
+    }
+    let [a1,b1] = counter;  // 打印 Exiting early
+
+    
+    
+    let arr4 = [1,2,3,4,5];
+    let iter4 = arr4[Symbol.iterator]();
+
+    for(let i of iter4){
+        console.log(i);
+        if(i > 2) break;
+    }
+    for(let i of iter4){
+        console.log(`如果迭代器没有关闭，这还可以继续从上次离开的地方继续迭代: i = ${i}`);
+    
+    }
 })()

@@ -6,3 +6,4 @@
 ### [第5章 基本引用类型](https://github.com/OUDUIDUI/professional_javascript_web_developer/tree/CHAPTER5_Basic_Reference_Type)
 ### [第6章 集合引用类型](https://github.com/OUDUIDUI/professional_javascript_web_developer/tree/CHAPTER6_Collection_Reference_Types)
 ### [第7章 迭代器与生成器](https://github.com/OUDUIDUI/professional_javascript_web_developer/tree/CHARTER7_Iterators_And_Generators)
+### [第8章 对象、类与面向对象编程](https://github.com/OUDUIDUI/professional-javascript-web-developer/tree/CHARTER8_Objects_Classes_and_Object-Oriented_Programming)

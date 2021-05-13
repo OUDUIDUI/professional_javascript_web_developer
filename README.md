@@ -8,3 +8,4 @@
 ### [第7章 迭代器与生成器](https://github.com/OUDUIDUI/professional_javascript_web_developer/tree/CHARTER7_Iterators_And_Generators)
 ### [第8章 对象、类与面向对象编程](https://github.com/OUDUIDUI/professional-javascript-web-developer/tree/CHARTER8_Objects_Classes_and_Object-Oriented_Programming)
 ### [第9章 代理与反射](https://github.com/OUDUIDUI/professional-javascript-web-developer/tree/CHARTER9_Proxies_and_Reflect)
+### [第10章 函数](https://github.com/OUDUIDUI/professional-javascript-web-developer/tree/CHARTER10_Functions)
